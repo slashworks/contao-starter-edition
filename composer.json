@@ -27,7 +27,8 @@
             "Slashworks\\ContaoStarterBundle\\Composer\\ScriptHandler::initializeApplication"
         ],
         "post-update-cmd": [
-            "Contao\\ManagerBundle\\Composer\\ScriptHandler::initializeApplication"
+            "Contao\\ManagerBundle\\Composer\\ScriptHandler::initializeApplication",
+            "Slashworks\\ContaoStarterBundle\\Composer\\ScriptHandler::initializeApplication"
         ]
     }
 }

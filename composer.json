@@ -1,0 +1,33 @@
+{
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "slashworks",
+            "homepage": "https://https://slash-works.de/"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "contao/manager-bundle": "4.4.*",
+        "slashworks/contao-starter-bundle": "^1.5"
+    },
+    "autoload": {
+        "psr-4": { "AppBundle\\": "src/AppBundle/" }
+    },
+    "config": {
+        "component-dir": "assets"
+    },
+    "extra": {
+        "contao-component-dir": "assets"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Contao\\ManagerBundle\\Composer\\ScriptHandler::initializeApplication",
+            "Slashworks\\ContaoStarterBundle\\Composer\\ScriptHandler::initializeApplication"
+        ],
+        "post-update-cmd": [
+            "Contao\\ManagerBundle\\Composer\\ScriptHandler::initializeApplication"
+        ]
+    }
+}

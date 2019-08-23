@@ -10,7 +10,8 @@
     "require": {
         "php": "^7.1",
         "contao/manager-bundle": "4.4.*",
-        "slashworks/contao-starter-bundle": "1.x"
+        "slashworks/contao-starter-bundle": "1.x",
+        "slashworks/contao-trackingmanager-bundle": "^1.x"
     },
     "autoload": {
         "psr-4": { "AppBundle\\": "src/AppBundle/" }
